@@ -17,6 +17,7 @@ function App() {
             contract={data.contract}
             location={data.location}
             languages={data.languages.map(language => language)}
+            tools={data.tools.map(tool => tool)}
           />
         ))}
       </div>

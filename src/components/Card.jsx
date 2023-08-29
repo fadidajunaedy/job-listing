@@ -8,7 +8,8 @@ const Card = (props) => {
         postedAt,
         contract,
         location,
-        languages
+        languages,
+        tools
     } = props
 
     return (
@@ -34,6 +35,11 @@ const Card = (props) => {
                 {languages.map((language, index) => (
                     <button key={index} className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
                         {language}
+                    </button>
+                ))}
+                {tools.map((tool, index) => (
+                    <button key={index} className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                        {tool}
                     </button>
                 ))}
             </div>
