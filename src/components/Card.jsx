@@ -12,6 +12,7 @@ const Card = (props) => {
         level,
         languages,
         tools,
+        filterFunction,
     } = props
 
     return (
@@ -34,19 +35,33 @@ const Card = (props) => {
             </div>
             <hr />
             <div className="flex justify-start items-center flex-wrap gap-2 sm:ml-auto">
-                <button className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                <button
+                    className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold"
+                    value={role}
+                    onClick={() => filterFunction("role", role)}>
                     {role}
                 </button>
-                <button className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                <button
+                    className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold"
+                    value={level}
+                    onClick={() => filterFunction("level", level)} >
                     {level}
                 </button>
                 {languages.map((language, index) => (
-                    <button key={index} className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                    <button
+                        key={index}
+                        className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold"
+                        value={language}
+                        onClick={() => filterFunction("languages", language)}>
                         {language}
                     </button>
                 ))}
                 {tools.map((tool, index) => (
-                    <button key={index} className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                    <button
+                        key={index}
+                        className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold"
+                        value={tool}
+                        onClick={() => filterFunction("tools", tool)}>
                         {tool}
                     </button>
                 ))}
