@@ -7,11 +7,9 @@
 body {
   font-family: 'League Spartan', sans-serif;
   background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 8%, 52%)
 }
 
-div,
-img,
-button {
-  transition: 0.3s ease;
-
+* {
+  transition: 0.3s ease
 }
