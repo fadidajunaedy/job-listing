@@ -16,6 +16,8 @@ function App() {
             postedAt={data.postedAt}
             contract={data.contract}
             location={data.location}
+            role={data.role}
+            level={data.level}
             languages={data.languages.map(language => language)}
             tools={data.tools.map(tool => tool)}
           />

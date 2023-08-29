@@ -8,8 +8,10 @@ const Card = (props) => {
         postedAt,
         contract,
         location,
+        role,
+        level,
         languages,
-        tools
+        tools,
     } = props
 
     return (
@@ -32,6 +34,12 @@ const Card = (props) => {
             </div>
             <hr />
             <div className="flex justify-start items-center flex-wrap gap-2 sm:ml-auto">
+                <button className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                    {role}
+                </button>
+                <button className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
+                    {level}
+                </button>
                 {languages.map((language, index) => (
                     <button key={index} className="btn py-1 px-2 bg-red-400 rounded-md text-sm font-bold">
                         {language}
@@ -42,6 +50,7 @@ const Card = (props) => {
                         {tool}
                     </button>
                 ))}
+
             </div>
         </div>
     )
