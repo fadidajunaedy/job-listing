@@ -90,6 +90,10 @@ function App() {
           ))}
         </div>
       </div>
+      <div className="attribution py-6">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt/hub" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/fadidajunaedy" target="_blank" rel="noreferrer">Fadida Junaedy</a>.
+      </div>
     </>
   )
 }
