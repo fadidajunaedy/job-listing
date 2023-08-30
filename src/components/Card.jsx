@@ -36,13 +36,13 @@ const Card = (props) => {
             <hr />
             <div className="flex justify-start items-center flex-wrap gap-2 sm:ml-auto">
                 <button
-                    className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] rounded-md text-sm font-bold"
+                    className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] hover:bg-[#5ba4a4] hover:text-[#eef6f6] rounded-md text-sm font-bold"
                     value={role}
                     onClick={() => filterFunction("role", role)}>
                     {role}
                 </button>
                 <button
-                    className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] rounded-md text-sm font-bold"
+                    className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] hover:bg-[#5ba4a4] hover:text-[#eef6f6] rounded-md text-sm font-bold"
                     value={level}
                     onClick={() => filterFunction("level", level)} >
                     {level}
@@ -50,7 +50,7 @@ const Card = (props) => {
                 {languages.map((language, index) => (
                     <button
                         key={index}
-                        className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] rounded-md text-sm font-bold"
+                        className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] hover:bg-[#5ba4a4] hover:text-[#eef6f6] rounded-md text-sm font-bold"
                         value={language}
                         onClick={() => filterFunction("languages", language)}>
                         {language}
@@ -59,7 +59,7 @@ const Card = (props) => {
                 {tools.map((tool, index) => (
                     <button
                         key={index}
-                        className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] rounded-md text-sm font-bold"
+                        className="btn py-1 px-2 bg-[#eef6f6] text-[#5ba4a4] hover:bg-[#5ba4a4] hover:text-[#eef6f6] rounded-md text-sm font-bold"
                         value={tool}
                         onClick={() => filterFunction("tools", tool)}>
                         {tool}

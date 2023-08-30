@@ -41,10 +41,6 @@ function App() {
     })
   }
 
-  useEffect(() => {
-    console.log(arrayFilters);
-  }, [arrayFilters])
-
   return (
     <>
       <header className="w-full px-8 h-24 bg-[url('/images/bg-header-mobile.svg')] sm:bg-[url('/images/bg-header-desktop.svg')] bg-[#5ba4a4]" >
@@ -54,7 +50,7 @@ function App() {
               {arrayFilters.map((filter, index) => (
                 <span key={index} className="inline-flex items-center rounded-md text-sm font-medium bg-[#eef6f6] text-[#5ba4a4] overflow-hidden">
                   <span className="py-1 px-2"> {filter.value}</span>
-                  <button type="button" onClick={() => removeFilter(filter)} className="flex-shrink-0 bg-[#5ba4a4] w-7 h-7 p-1">
+                  <button type="button" onClick={() => removeFilter(filter)} className="flex-shrink-0 bg-[#5ba4a4] hover:bg-[#2c3a3a] w-7 h-7 p-1">
                     <svg className="text-white font-bold" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
